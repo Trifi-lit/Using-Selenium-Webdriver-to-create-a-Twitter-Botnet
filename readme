@@ -1,0 +1,14 @@
+The recent dispute between Elon Musk and Twitter about the percentage of spambot accounts in the social media platform sparked my curiosity regarding the difficulty of creating twitter botnets with the use of automated tools. In order to create my bots, I used a simple python library called Selenium that provides tools for web broswer automation and "https://temp-mail.org/el/10minutemail" to get burner email accounts for the bots.
+
+namecreator.py: simple algorithm that takes data from the names.txt file and creates user names by adding a 3-digit random number in the end. Also creates random passwords and birthdates and saves everything in the data.txt file
+
+massproduction.py: Reads the data.txt file in a loop and creates twitter accounts using the chrome Webdriver tool. The passwords plus the emails used are stored in the LoginData.txt file.
+
+
+Banning:
+1)Some IPs from the vpn are already flagged by the temp-mail service. Most aren't.
+2)Almost all accounts created by 10minutesmail were banned after a few minutes.(even some manual I think)
+3)Accounts created by temp-mail have much better chances of surviving.
+4)Accounts created together(and with same IP0 and then accessed together(serial) usually get banned all together. However if the last one (e.g.) gets logged in 30 minutes later the previous ones and gets banned the others do not. 
+5)Accesing the same account from a different IP than it was created is a always a problem.
+6)Interfering with the automation by clicking (e.g. fullscreen while logging in) has led to ban in some cases.(maybe coincidence)
