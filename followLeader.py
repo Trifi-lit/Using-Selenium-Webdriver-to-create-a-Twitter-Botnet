@@ -6,7 +6,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 import time
 
 size=5
-
+leader='BotLeaderAccountName'
 #mail="15jjsnpqnm@edu.email.edu.pl"
 #password="uxkrzmiv886"
 f = open('LoginData.txt', 'r')
@@ -57,7 +57,7 @@ for i in range(size):
 
 
     e=driver.find_element("xpath","//*[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[1]/div[1]/div/div/div/div/div[1]/div[2]/div/div/div/form/div[1]/div/div/label/div[2]/div/input")
-    e.send_keys('BotLeaderAccountName')
+    e.send_keys(leader)
     time.sleep(2)
     try:
         driver.find_element("xpath","//*[@id='typeaheadDropdown-2']/div[3]/div").click()
