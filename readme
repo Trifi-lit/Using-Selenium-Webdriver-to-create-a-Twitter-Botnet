@@ -4,6 +4,7 @@ namecreator.py: simple algorithm that takes data from the names.txt file and cre
 
 massproduction.py: Reads the data.txt file in a loop and creates twitter accounts using the chrome Webdriver tool. The passwords plus the emails used are stored in the LoginData.txt file.
 
+followLeader.py: Logins in each account in the LoginData.txt file and follows the account specified by the 'leader' variable.
 
 Banning:
 1)Some IPs from the vpn are already flagged by the temp-mail service. Most aren't.
