@@ -57,24 +57,16 @@ for i in range(size):
 
 
     e=driver.find_element("xpath","//*[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[1]/div[1]/div/div/div/div/div[1]/div[2]/div/div/div/form/div[1]/div/div/label/div[2]/div/input")
-    e.send_keys('EktelionLeader')
+    e.send_keys('BotLeaderAccountName')
     time.sleep(2)
     try:
         driver.find_element("xpath","//*[@id='typeaheadDropdown-2']/div[3]/div").click()
     except:
         pass
     time.sleep(2)    
-    #click on followers
-    #driver.find_element("xpath","//*[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/div/div[2]/div[4]/div[2]/a").click()
-    #time.sleep(1.3)
-    #click follow?
-    try:
-        flist=driver.find_element("xpath","//*[@aria-label='Follow MHenderson257']")
-    except:
-        print("one")
-        pass
 
-    time.sleep(2)
+   
+    #click follow
     driver.find_element("xpath","//*[@id='react-root']/div/div/div[2]/main/div/div/div/div/div/div[2]/div/div/div/div[2]/div[1]/div[2]/div[2]/div[1]/div").click()
     time.sleep(3)    
     driver.quit()
